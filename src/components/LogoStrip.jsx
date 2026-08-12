@@ -6,7 +6,7 @@ import ieee_cs from "../assets/image/ieee_cs_kolkata_sec.png";
 import ieee_sb from "../assets/image/IEEE_SB_logo_white.png";
 import iedc from "../assets/image/IEDC_White_Logo.png";
 import ieee_cs_sb from "../assets/image/ieee_cs_uem_white (1).png";
-import cycrai_logo from "../assets/image/cycrai_logo.png";
+import cycrai_logo from "../assets/image/cycrai_latest_logo.png";
 export default function LogoStrip() {
   return (
     <div className="w-full px-4 mt-11 md:mt-16">

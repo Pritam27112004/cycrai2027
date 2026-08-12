@@ -98,7 +98,7 @@
 
 
 import { motion } from "framer-motion";
-
+import Footer from "../components/Footer";
 export default function Speakers() {
   return (
     <main className="min-h-screen bg-[#020817] text-white overflow-hidden">
@@ -189,6 +189,7 @@ export default function Speakers() {
 
         </div>
       </section>
+      <Footer/>
     </main>
   );
 }

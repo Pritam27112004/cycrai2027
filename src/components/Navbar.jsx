@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/image/cycrai_logo.png";
+import logo from "../assets/image/cycrai_latest_logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {

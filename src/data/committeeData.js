@@ -220,11 +220,6 @@ export const committeeData = {
             position: "Hospitality Chair",
             image: "",
           },
-          {
-            name: "Prof. Barun Kumbhakar",
-            position: "Hospitality Chair",
-            image: "",
-          },
         ],
       },
     ],
