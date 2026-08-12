@@ -1241,133 +1241,191 @@ const foreignFees = [
 
           </motion.div>
 
-          {/* Registration Fee Tables */}
+          <div className="space-y-12">
 
-          <div className="grid xl:grid-cols-2 gap-10">
+  {/* EARLY BIRD REGISTRATION FEES */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+    className="rounded-[20px] border border-cyan-400/20 overflow-hidden bg-white/5 backdrop-blur-2xl"
+  >
 
-            {/* Indian Delegates */}
+    {/* Heading */}
+    <div className="px-6 md:px-8 pt-7 pb-4">
+      <h3 className="text-2xl md:text-3xl font-bold text-cyan-300 uppercase tracking-wide">
+        Early Bird Registration Fees
+      </h3>
+    </div>
 
-            <motion.div
-              initial={{ opacity:0,x:-40 }}
-              whileInView={{ opacity:1,x:0 }}
-              viewport={{ once:true }}
-              transition={{ duration:.6 }}
-              className="rounded-[35px] border border-cyan-400/20 overflow-hidden bg-white/5 backdrop-blur-2xl"
-            >
+    {/* Table Header */}
+    <div className="overflow-x-auto">
+      <div className="min-w-[700px]">
 
-              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/10 p-8 border-b border-cyan-400/20">
+        <div className="grid grid-cols-[2fr_1fr_1fr] bg-cyan-500/80 text-white uppercase text-sm font-bold tracking-wide px-5 md:px-6 py-4">
+          <span>Author Category</span>
+          <span className="text-center">IEEE Member</span>
+          <span className="text-center">Non-IEEE</span>
+        </div>
 
-                <h3 className="text-3xl font-bold text-white">
+        {/* Rows */}
+        <div className="divide-y divide-cyan-400/10">
 
-                  🇮🇳 Indian Delegates
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Regular Author Academician (UG, PG, PhD, Faculty Members)
+            </span>
 
-                </h3>
+            <span className="text-center font-bold text-white">
+              ₹ 8,500
+            </span>
 
-              </div>
-
-              <div className="p-8">
-
-                <div className="grid grid-cols-2 text-cyan-300 uppercase text-sm tracking-[2px] border-b border-cyan-400/20 pb-4">
-
-                  <span>Category</span>
-
-                  <span className="text-right">Fee</span>
-
-                </div>
-
-                <div className="divide-y divide-cyan-400/10">
-
-                  {indianFees.map((item,index)=>(
-
-                    <div
-                      key={index}
-                      className="grid grid-cols-2 py-5 items-center"
-                    >
-
-                      <span className="text-slate-300">
-
-                        {item.category}
-
-                      </span>
-
-                      <span className="text-right font-bold text-white">
-
-                        {item.total}
-
-                      </span>
-
-                    </div>
-
-                  ))}
-
-                </div>
-
-              </div>
-
-            </motion.div>
-
-            {/* Foreign Delegates */}
-
-            <motion.div
-              initial={{ opacity:0,x:40 }}
-              whileInView={{ opacity:1,x:0 }}
-              viewport={{ once:true }}
-              transition={{ duration:.6 }}
-              className="rounded-[35px] border border-cyan-400/20 overflow-hidden bg-white/5 backdrop-blur-2xl"
-            >
-
-              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/10 p-8 border-b border-cyan-400/20">
-
-                <h3 className="text-3xl font-bold text-white">
-
-                  🌍 Foreign Delegates
-
-                </h3>
-
-              </div>
-
-              <div className="p-8">
-
-                <div className="grid grid-cols-2 text-cyan-300 uppercase text-sm tracking-[2px] border-b border-cyan-400/20 pb-4">
-
-                  <span>Category</span>
-
-                  <span className="text-right">Fee</span>
-
-                </div>
-
-                <div className="divide-y divide-cyan-400/10">
-
-                  {foreignFees.map((item,index)=>(
-
-                    <div
-                      key={index}
-                      className="grid grid-cols-2 py-5 items-center"
-                    >
-
-                      <span className="text-slate-300">
-
-                        {item.category}
-
-                      </span>
-
-                      <span className="text-right font-bold text-white">
-
-                        {item.total}
-
-                      </span>
-
-                    </div>
-
-                  ))}
-
-                </div>
-
-              </div>
-
-            </motion.div>
-
+            <span className="text-center font-bold text-white">
+              ₹ 9,000
+            </span>
           </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Regular Author from Industry
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 9,500
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 10,000
+            </span>
+          </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Foreign Delegates
+            </span>
+
+            <span className="text-center font-bold text-white">
+              USD 350
+            </span>
+
+            <span className="text-center font-bold text-white">
+              USD 400
+            </span>
+          </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Only Attending / Accompanying
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 4,000
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 4,000
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </motion.div>
+
+
+  {/* REGULAR REGISTRATION FEES */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6, delay: 0.1 }}
+    className="rounded-[20px] border border-cyan-400/20 overflow-hidden bg-white/5 backdrop-blur-2xl"
+  >
+
+    {/* Heading */}
+    <div className="px-6 md:px-8 pt-7 pb-4">
+      <h3 className="text-2xl md:text-3xl font-bold text-cyan-300 uppercase tracking-wide">
+        Regular Registration Fees
+      </h3>
+    </div>
+
+    {/* Table */}
+    <div className="overflow-x-auto">
+      <div className="min-w-[700px]">
+
+        {/* Table Header */}
+        <div className="grid grid-cols-[2fr_1fr_1fr] bg-cyan-500/80 text-white uppercase text-sm font-bold tracking-wide px-5 md:px-6 py-4">
+          <span>Author Category</span>
+          <span className="text-center">IEEE Member</span>
+          <span className="text-center">Non-IEEE</span>
+        </div>
+
+        {/* Rows */}
+        <div className="divide-y divide-cyan-400/10">
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Regular Author Academician (UG, PG, PhD, Faculty Members)
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 9,000
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 9,500
+            </span>
+          </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Regular Author from Industry
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 10,000
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 10,500
+            </span>
+          </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Foreign Delegates
+            </span>
+
+            <span className="text-center font-bold text-white">
+              USD 400
+            </span>
+
+            <span className="text-center font-bold text-white">
+              USD 450
+            </span>
+          </div>
+
+          <div className="grid grid-cols-[2fr_1fr_1fr] px-5 md:px-6 py-5 items-center">
+            <span className="text-slate-300">
+              Only Attending / Accompanying
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 4,000
+            </span>
+
+            <span className="text-center font-bold text-white">
+              ₹ 4,000
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </motion.div>
+
+</div>
 
           {/* CTA */}
 
@@ -1462,7 +1520,7 @@ const foreignFees = [
                 <button
                   onClick={() =>
                     window.open(
-                      "https://cmt3.research.microsoft.com/",
+                      "",
                       "_blank"
                     )
                   }

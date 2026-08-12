@@ -246,27 +246,7 @@ export default function AboutSection() {
                 </span>
               </h3>
 
-              <div
-                className="
-                  mt-6
-                  inline-flex
-                  items-center
-                  rounded-full
-                  border
-                  border-cyan-400/30
-                  bg-cyan-400/10
-                  px-5
-                  py-2
-                "
-              >
-                <span className="text-cyan-300 font-semibold">
-                  IEEE Conference Record :
-                </span>
-
-                <span className="ml-2 text-white font-bold">
-                  #
-                </span>
-              </div>
+              
             </div>
 
             {/* Description */}
@@ -449,59 +429,7 @@ export default function AboutSection() {
 
             {/* Statistics */}
 
-            <div
-              className="
-                mt-8
-                rounded-3xl
-                border
-                border-cyan-400/20
-                bg-[#071326]/70
-                backdrop-blur-xl
-                p-8
-              "
-            >
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-                <div>
-                  <h3 className="text-4xl font-black text-cyan-300">
-                    300+
-                  </h3>
-                  <p className="mt-2 text-slate-400">
-                    Delegates
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-4xl font-black text-cyan-300">
-                    20+
-                  </h3>
-                  <p className="mt-2 text-slate-400">
-                    Countries
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-4xl font-black text-cyan-300">
-                    100+
-                  </h3>
-                  <p className="mt-2 text-slate-400">
-                    Research Papers
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-4xl font-black text-cyan-300">
-                    15+
-                  </h3>
-                  <p className="mt-2 text-slate-400">
-                    Keynote Speakers
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
+            
 
           </div>
 
