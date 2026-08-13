@@ -166,7 +166,7 @@ export default function CallForPapers() {
 
               <Sparkles size={16} />
 
-              IEEE International Conference
+              Call For Papers
 
             </span>
 

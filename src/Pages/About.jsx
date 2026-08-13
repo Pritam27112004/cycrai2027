@@ -605,7 +605,7 @@ export default function AboutSection() {
               "
             >
               <Globe size={16} />
-              IEEE International Conference
+              Cycrai 2027
             </span>
 
             {/* Heading */}

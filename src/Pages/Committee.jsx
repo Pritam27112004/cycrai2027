@@ -113,7 +113,7 @@ export default function Committee() {
               tracking-wide
             "
           >
-            IEEE • CYCRAI 2027
+            Conference Committee
           </motion.div>
 
           {/* Title */}

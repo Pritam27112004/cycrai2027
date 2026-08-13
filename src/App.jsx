@@ -7,7 +7,6 @@ import Home from "./Pages/Home.jsx";
 import TopBar from "./components/TopBar.jsx"; 
 import About from "./Pages/About.jsx"; // Capitalized 'About' for React standards
 import Guidelines from "./Pages/Guidelines.jsx";
-import Registration from "./Pages/Registrations.jsx";
 import Committee from "./Pages/Committee.jsx";
 import CallForPapers from "./Pages/CallForPaper.jsx"; 
 import Speakers from "./Pages/Speakers.jsx";
@@ -15,6 +14,7 @@ import Tracks from "./Pages/Tracks.jsx";
 import ImportantDates from "./Pages/ImportantDates.jsx";
 import Venue from "./Pages/Venue.jsx";
 import Contact from "./Pages/contact.jsx";
+import Registration from "./pages/Registration";
 
 function App() {
   
@@ -61,6 +61,7 @@ function App() {
           <Route path="/important-dates" element={<ImportantDates />} />
           <Route path="/venue" element={<Venue />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
       </BrowserRouter>
     </div>

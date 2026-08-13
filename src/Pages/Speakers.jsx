@@ -1,101 +1,3 @@
-// export default function Speakers() {
-//   return (
-//     <main className="min-h-screen bg-[#FAF7F2] pt-40 pb-20">
-//       <div className="max-w-7xl mx-auto px-6">
-
-//         {/* Page Heading */}
-//         <div className="text-center mb-20">
-//           <h1 className="text-5xl font-bold text-[#092447]">
-//             Program
-//           </h1>
-
-//           <div className="w-28 h-1 bg-[#D4AF37] mx-auto mt-5 rounded-full"></div>
-
-//           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-//             Stay tuned for exciting keynote talks, technical sessions,
-//             workshops, and panel discussions from leading researchers and
-//             industry experts.
-//           </p>
-//         </div>
-
-//         {/* ================= SPEAKERS ================= */}
-
-//         <section className="mb-24">
-//           <div className="flex items-center gap-4 mb-10">
-//             <div className="w-2 h-10 bg-[#D4AF37] rounded-full"></div>
-
-//             <h2 className="text-3xl font-bold text-[#092447]">
-//               Invited Speakers
-//             </h2>
-//           </div>
-
-//           <div
-//             className="
-//               bg-white
-//               rounded-3xl
-//               border
-//               border-gray-200
-//               shadow-lg
-//               p-16
-//               text-center
-//             "
-//           >
-//             <div className="text-7xl mb-6">🎤</div>
-
-//             <h3 className="text-3xl font-semibold text-[#092447] mb-4">
-//               Speaker Details Coming Soon
-//             </h3>
-
-//             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-8">
-//               The list of keynote speakers, invited talks, and distinguished
-//               guests will be announced shortly. Please check back later for
-//               updates.
-//             </p>
-//           </div>
-//         </section>
-
-//         {/* ================= PROGRAM ================= */}
-
-//         <section>
-//           <div className="flex items-center gap-4 mb-10">
-//             <div className="w-2 h-10 bg-[#D4AF37] rounded-full"></div>
-
-//             <h2 className="text-3xl font-bold text-[#092447]">
-//               Conference Program
-//             </h2>
-//           </div>
-
-//           <div
-//             className="
-//               bg-white
-//               rounded-3xl
-//               border
-//               border-gray-200
-//               shadow-lg
-//               p-16
-//               text-center
-//             "
-//           >
-//             <div className="text-7xl mb-6">📅</div>
-
-//             <h3 className="text-3xl font-semibold text-[#092447] mb-4">
-//               Program Details Coming Soon
-//             </h3>
-
-//             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-8">
-//               The detailed conference schedule, keynote sessions, paper
-//               presentations, tutorials, workshops, and networking events will
-//               be published here once finalized.
-//             </p>
-//           </div>
-//         </section>
-
-//       </div>
-//     </main>
-//   );
-// }
-
-
 
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
@@ -111,7 +13,7 @@ export default function Speakers() {
         <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-28">
           <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}}
             className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-500/10 px-5 py-2 text-cyan-300 backdrop-blur-xl">
-            IEEE • CYCRAI 2027
+            Conference Program
           </motion.div>
 
           <motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}}
