@@ -64,31 +64,68 @@ export default function CallForPapers() {
         "Every submission undergoes a rigorous peer-review process to ensure technical excellence.",
     },
   ];
-
   const topics = [
-    "Artificial Intelligence & Machine Learning",
-    "Cyber Security & Digital Forensics",
-    "6G Communication & Wireless Networks",
-    "Cloud Computing & Edge Intelligence",
-    "IoT & Smart Infrastructure",
-    "Robotics & Intelligent Automation",
-    "Signal, Image & Video Processing",
-    "Quantum Computing & Photonics",
-    "Biomedical Engineering",
-    "Sustainable Computing & Green Technologies",
-  ];
-  const indianFees = [
-  { category: "IEEE Student Member", total: "INR 9,000" },
-  { category: "Non-IEEE Student Member", total: "INR 10,000" },
-  { category: "IEEE Member", total: "INR 10,000" },
-  { category: "Non-IEEE Member", total: "INR 11,000" },
-];
-
-const foreignFees = [
-  { category: "IEEE Student Member", total: "USD 150" },
-  { category: "Non-IEEE Student Member", total: "USD 200" },
-  { category: "IEEE Member", total: "USD 200" },
-  { category: "Non-IEEE Member", total: "USD 250" },
+  {
+    title: "Track 1: Foundation of Cyber Security",
+    subtopics: [
+      "Cybersecurity Awareness",
+      "Cybersecurity Governance, Risk and Compliance",
+      "Digital Forensics and Cybercrime Investigation",
+      "Cyberattack Reconstruction and Attribution",
+      "Hardware Security and Reliability",
+      "IoT-based Data Security",
+      "Security in IoT, Cloud and Edge Devices",
+      "Database Security and Privacy",
+      "Malware Analysis",
+      "Federated Learning Security and Privacy-Preserving Machine Learning",
+      "Digital Twin Security",
+      "Cyber Resilience and Cyber Recovery",
+      "5G/6G Network Security",
+      "Cyber Threat Intelligence",
+      "Intrusion Detection and Prevention",
+      "Vulnerability Assessment and Prevention",
+      "Zero Trust Architecture",
+      "Cyber-Physical Systems and Security",
+      "Blockchain and Distributed Ledger Security",
+      "Security Aspects of Software Development",
+      "AI-Driven Cyber Defence",
+    ],
+  },
+  {
+    title: "Track 2: Foundation of Cryptography",
+    subtopics: [
+      "Cryptography and Cryptanalysis",
+      "Information Theory and Cryptography",
+      "Applied Cryptography and Network Security",
+      "AI/ML for Cryptography",
+      "Lightweight Cryptography for IoT and Embedded Systems",
+      "Applied Cryptography and Its Implementation",
+      "Quantum Cryptography",
+      "Quantum Machine Learning",
+      "Quantum Computing",
+      "Post-Quantum Cryptography",
+    ],
+  },
+  {
+    title: "Track 3: Foundation of Responsible AI",
+    subtopics: [
+      "AI Ethics",
+      "AI Fairness",
+      "AI Bias Mitigation",
+      "Explainable AI",
+      "Interpretable AI",
+      "Transparency in AI Audit",
+      "Privacy-Preserving AI Models",
+      "Secure AI Systems",
+      "Responsible Generative AI",
+      "AI for Ransomware Analysis",
+      "AI Security in Healthcare, Education, Infrastructure and Finance",
+      "Security in Sustainable AI",
+      "Societal Impact of Responsible AI Development",
+      "Security and Privacy for AI Systems",
+      "AI/ML for Threat Detection and Prevention",
+    ],
+  },
 ];
 
   return (
@@ -202,7 +239,7 @@ const foreignFees = [
                   hover:bg-cyan-500/10
                 "
               >
-                Explore Topics
+                Explore Tracks
               </button>
 
             </div>
@@ -580,179 +617,132 @@ const foreignFees = [
 
           </motion.div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-            {topics.map((topic,index)=>(
+  {topics.map((topic, index) => (
 
-              <motion.div
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.55,
+        delay: index * 0.05,
+      }}
+      className="
+        group
+        relative
+        overflow-hidden
+        rounded-[28px]
+        border border-cyan-400/15
+        bg-white/5
+        backdrop-blur-xl
+        p-8
+        hover:border-cyan-400/40
+        hover:-translate-y-2
+        transition-all
+        duration-500
+      "
+    >
 
-                key={index}
+      {/* Hover Glow */}
+      <div
+        className="
+          absolute
+          inset-0
+          opacity-0
+          group-hover:opacity-100
+          transition
+          duration-500
+          bg-gradient-to-br
+          from-cyan-500/10
+          to-transparent
+        "
+      />
 
-                initial={{opacity:0,y:40}}
+      <div className="relative z-10">
 
-                whileInView={{opacity:1,y:0}}
+        {/* Track Number */}
+        <div
+          className="
+            w-14
+            h-14
+            rounded-2xl
+            bg-cyan-500/10
+            border
+            border-cyan-400/20
+            flex
+            items-center
+            justify-center
+            mb-6
+          "
+        >
+          <span className="text-cyan-300 text-xl font-bold">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+        </div>
 
-                viewport={{once:true}}
+        {/* Track Title */}
+        <h3
+          className="
+            text-xl
+            font-bold
+            text-white
+            leading-8
+            group-hover:text-cyan-300
+            transition-colors
+            duration-300
+          "
+        >
+          {topic.title}
+        </h3>
 
-                transition={{
+        {/* Subtopics */}
+        <div className="mt-6 space-y-3">
 
-                  duration:.55,
+          {topic.subtopics.map((subtopic, subIndex) => (
+            <div
+              key={subIndex}
+              className="
+                flex
+                items-start
+                gap-3
+                text-sm
+                text-slate-400
+                leading-6
+              "
+            >
+              <span
+                className="
+                  mt-2
+                  w-1.5
+                  h-1.5
+                  flex-shrink-0
+                  rounded-full
+                  bg-cyan-400
+                "
+              />
 
-                  delay:index*0.05
+              <span>
+                {subtopic}
+              </span>
+            </div>
+          ))}
 
-                }}
+        </div>
 
-                className="group relative overflow-hidden rounded-[28px] border border-cyan-400/15 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-400/40 hover:-translate-y-2 transition-all duration-500"
+      </div>
 
-              >
+    </motion.div>
 
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-cyan-500/10 to-transparent"></div>
+  ))}
 
-                <div className="relative z-10">
-
-                  <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 flex items-center justify-center mb-6">
-
-                    <span className="text-cyan-300 text-xl font-bold">
-
-                      {String(index+1).padStart(2,"0")}
-
-                    </span>
-
-                  </div>
-
-                  <h3 className="text-xl font-bold text-white leading-8">
-
-                    {topic}
-
-                  </h3>
-
-                  <div className="mt-8 flex items-center justify-between">
-
-                    <span className="text-cyan-300 text-sm uppercase tracking-[2px]">
-
-                      Technical Track
-
-                    </span>
-
-                    <ArrowRight
-
-                      size={18}
-
-                      className="text-cyan-300 group-hover:translate-x-2 transition-transform"
-
-                    />
-
-                  </div>
-
-                </div>
-
-              </motion.div>
-
-            ))}
-
-          </div>
+</div>
 
           {/* Bottom Highlight */}
 
-          <motion.div
-
-            initial={{opacity:0}}
-
-            whileInView={{opacity:1}}
-
-            viewport={{once:true}}
-
-            transition={{delay:.4}}
-
-            className="mt-20 rounded-[35px] border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 via-sky-500/5 to-blue-500/10 backdrop-blur-xl p-10"
-
-          >
-
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-
-              <div>
-
-                <h3 className="text-3xl font-bold text-white">
-
-                  Interdisciplinary Research is Highly Encouraged
-
-                </h3>
-
-                <p className="mt-6 text-slate-400 leading-8">
-
-                  Papers combining multiple domains such as Artificial
-                  Intelligence, Cyber Security, Data Science, Sustainable
-                  Engineering, Robotics, IoT, Smart Healthcare and Digital
-                  Infrastructure are especially welcome.
-
-                </p>
-
-              </div>
-
-              <div className="grid grid-cols-2 gap-5">
-
-                <div className="rounded-2xl bg-white/5 border border-cyan-400/20 p-6">
-
-                  <h4 className="text-cyan-300 font-bold">
-
-                    AI + Security
-
-                  </h4>
-
-                  <p className="text-slate-400 mt-3 text-sm">
-
-                    Intelligent threat detection & secure AI.
-
-                  </p>
-
-                </div>
-
-                <div className="rounded-2xl bg-white/5 border border-cyan-400/20 p-6">
-
-                  <h4 className="text-cyan-300 font-bold">
-
-                    Smart Cities
-
-                  </h4>
-
-                  <p className="text-slate-400 mt-3 text-sm">
-
-                    IoT, Digital Twins and Sustainable Infrastructure.
-
-                  </p>
-
-                </div>
-                                <div className="rounded-2xl bg-white/5 border border-cyan-400/20 p-6">
-
-                  <h4 className="text-cyan-300 font-bold">
-                    Green Computing
-                  </h4>
-
-                  <p className="text-slate-400 mt-3 text-sm leading-7">
-                    Sustainable hardware, energy-efficient AI, carbon-aware
-                    computing and future digital ecosystems.
-                  </p>
-
-                </div>
-
-                <div className="rounded-2xl bg-white/5 border border-cyan-400/20 p-6">
-
-                  <h4 className="text-cyan-300 font-bold">
-                    Industry 5.0
-                  </h4>
-
-                  <p className="text-slate-400 mt-3 text-sm leading-7">
-                    Intelligent manufacturing, robotics, automation and
-                    cyber-physical production systems.
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </motion.div>
+          
 
         </div>
 

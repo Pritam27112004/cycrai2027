@@ -175,8 +175,7 @@ export default function Committee() {
           >
             Meet the distinguished researchers, academicians, IEEE leaders,
             and industry experts driving CYCRAI 2027 towards becoming a
-            globally recognized conference in Artificial Intelligence,
-            Cyber Security, and Emerging Technologies.
+            globally recognized conference in Responsible Artificial Intelligence, Cryptography, Cyber Security and Emerging Technologies.
           </motion.p>
 
           {/* Decorative Line */}
@@ -249,7 +248,7 @@ export default function Committee() {
                 </motion.div>
                 <motion.div
                   layout
-                  className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-10"
+                  className="grid grid-cols-1 xl:grid-cols-3 gap-8 lg:gap-10"
                 >
                   {section.members.map((member, memberIndex) => (
                     <motion.div

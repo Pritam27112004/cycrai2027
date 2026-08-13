@@ -1,9 +1,9 @@
 import uem from "../assets/image/UEM_White.png";
 import iem from "../assets/image/IEM_White.png";
 import ieee_kol from "../assets/image/ieeek_logo_white.png";
-import ieee_sb from "../assets/image/IEEE_SB_logo_white.png";
+import ieee_sb from "../assets/image/Ieee_cs_kol_white.png";
 import iedc from "../assets/image/IEDC_White_Logo.png";
-import ieee_cs_sb from "../assets/image/ieee_cs_uem_white (1).png";
+import ieee_cs_sb from "../assets/image/pritam2.png";
 import cycrai_logo from "../assets/image/cycrai_latest_logo.png";
 
 export default function LogoStrip() {
@@ -66,7 +66,7 @@ export default function LogoStrip() {
             "
           >
             <img
-              src={uem}
+              src={iem}
               alt="University Of Engineering and Management Kolkata"
               className="
                 max-h-full
@@ -306,7 +306,7 @@ export default function LogoStrip() {
             "
           >
             <img
-              src={iem}
+              src={uem}
               alt="Institute Of Engineering and Management Kolkata"
               className="
                 max-h-full
