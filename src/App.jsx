@@ -14,7 +14,7 @@ import Tracks from "./Pages/Tracks.jsx";
 import ImportantDates from "./Pages/ImportantDates.jsx";
 import Venue from "./Pages/Venue.jsx";
 import Contact from "./Pages/contact.jsx";
-import Registration from "./pages/Registration";
+import Registration from "./Pages/Registration";
 
 function App() {
   
