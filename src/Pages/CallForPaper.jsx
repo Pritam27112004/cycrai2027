@@ -170,12 +170,33 @@ export default function CallForPapers() {
 
             </span>
 
-            <h1 className="mt-8 text-5xl md:text-7xl font-black leading-tight text-white">
-              Call For
-              <span className="block bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-                Papers
-              </span>
-            </h1>
+            <h1
+  className="
+    mt-8
+    text-5xl
+    md:text-7xl
+    font-black
+    leading-[1.15]
+    text-white
+    overflow-visible
+  "
+>
+  Call For
+  <span
+    className="
+      block
+      pb-3
+      bg-gradient-to-r
+      from-cyan-300
+      via-sky-400
+      to-blue-500
+      bg-clip-text
+      text-transparent
+    "
+  >
+    Papers
+  </span>
+</h1>
                         <p className="mt-8 max-w-4xl mx-auto text-lg md:text-xl leading-9 text-slate-300">
               CYCRAI 2027 invites original and unpublished research papers
               from academicians, researchers, industry professionals and

@@ -1,68 +1,3 @@
-// import Footer from "../components/Footer.jsx";
-// import {
-//   FaEnvelope,
-//   FaMapMarkerAlt,
-//   FaWhatsapp,
-// } from "react-icons/fa";
-
-// export default function Contact() {
-//   return (
-//     <section
-//       id="contact"
-//       className="relative overflow-hidden bg-[#020817] py-28 scroll-mt-24"
-//     >
-//       {/* Background Glow */}
-
-//       <div className="absolute inset-0">
-
-//         <div className="absolute top-0 left-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
-
-//         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-blue-600/10 blur-[180px]" />
-
-//       </div>
-
-//       <div className="relative max-w-6xl mx-auto px-6">
-
-//         {/* Heading */}
-
-//         <div
-//           className="text-center mb-20"
-//           data-aos="fade-up"
-//         >
-
-//           <span
-//             className="
-//               inline-block
-//               px-5
-//               py-2
-//               rounded-full
-//               border
-//               border-cyan-400/30
-//               bg-cyan-400/10
-//               text-cyan-300
-//               uppercase
-//               tracking-[3px]
-//               text-sm
-//               font-semibold
-//             "
-//           >
-//             Contact & Support
-//           </span>
-
-//           <h2
-//             className="
-//               mt-6
-//               text-4xl
-//               md:text-6xl
-//               font-black
-//               text-white
-//               font-['Orbitron']
-//             "
-//           >
-//             Get in Touch
-//           </h2>
-
-//           <p
 
 import { motion } from "framer-motion";
 import {
@@ -204,7 +139,7 @@ export default function Contact() {
                 </h3>
 
                 <p className="mt-5 text-slate-400 text-lg leading-8">
-                  Institute of Engineering and Management (IEM), Kolkata
+                  Institute of Engineering & Management, Kolkata
                   welcomes researchers, academicians, industry professionals,
                   students and innovators from around the world to CYCRAI 2027.
                 </p>
@@ -282,11 +217,11 @@ export default function Contact() {
                       </p>
 
                       <p className="mt-2 text-lg text-white">
-                        Institute of Engineering and Management
+                        Institute of Engineering & Management, Kolkata
                       </p>
 
                       <p className="mt-1 text-slate-400 leading-7">
-                        University Campus, New Town,
+                        University Campus, Newtown,
                         <br />
                         Kolkata, West Bengal, India
                       </p>

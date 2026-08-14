@@ -420,33 +420,33 @@ export default function Registration() {
             {/* Heading */}
 
             <h1
-              className="
-                mt-8
-                text-5xl
-                md:text-7xl
-                font-black
-                leading-tight
-                text-white
-              "
-            >
+  className="
+    mt-8
+    text-5xl
+    md:text-7xl
+    font-black
+    leading-[1.1]
+    text-white
+    overflow-visible
+  "
+>
+  Conference
 
-              Conference
-
-              <span
-                className="
-                  block
-                  bg-gradient-to-r
-                  from-cyan-300
-                  via-sky-400
-                  to-blue-500
-                  bg-clip-text
-                  text-transparent
-                "
-              >
-                Registration
-              </span>
-
-            </h1>
+  <span
+    className="
+      block
+      pb-3
+      bg-gradient-to-r
+      from-cyan-300
+      via-sky-400
+      to-blue-500
+      bg-clip-text
+      text-transparent
+    "
+  >
+    Registration
+  </span>
+</h1>
 
 
             {/* Description */}

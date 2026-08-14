@@ -17,11 +17,11 @@ import uem from "../assets/image/uem.jpeg";
 export default function Venue() {
   const stats = [
     {
-      value: "IEM",
+      value: "IEM Kolkata",
       label: "Host Institution",
     },
     {
-      value: "New Town",
+      value: "Newtown",
       label: "Conference Location",
     },
     {
@@ -170,7 +170,7 @@ export default function Venue() {
                 text-cyan-300
               "
             >
-              Institute of Engineering and Management
+              Institute of Engineering & Management, Kolkata
             </p>
 
             <div
@@ -186,7 +186,7 @@ export default function Venue() {
               <MapPin size={18} className="text-cyan-400" />
 
               <span>
-                University Campus • New Town • Kolkata • India
+                University Campus • Newtown • Kolkata • India
               </span>
             </div>
 
@@ -368,7 +368,7 @@ export default function Venue() {
                   text-transparent
                 "
               >
-                & Management
+                & Management, Kolkata
               </span>
             </h2>
 
@@ -507,7 +507,7 @@ export default function Venue() {
                   leading-8
                 "
               >
-                The Institute of Engineering and Management, Kolkata,
+                The Institute of Engineering & Management, Kolkata,
                 provides an academic environment focused on engineering,
                 technology, research, innovation and professional development.
               </p>
@@ -899,8 +899,8 @@ export default function Venue() {
                 text-slate-400
               "
             >
-              Experience CYCRAI 2027 at the Institute of Engineering and
-              Management, New Town, Kolkata — where researchers, innovators
+              Experience CYCRAI 2027 at the Institute of Engineering &
+              Management, Newtown, Kolkata — where researchers, innovators
               and technology professionals come together.
             </p>
 
@@ -930,8 +930,8 @@ export default function Venue() {
               />
 
               <span>
-                Institute of Engineering and Management,
-                New Town, Kolkata, India
+                Institute of Engineering & Management,
+                Newtown, Kolkata, India
               </span>
 
             </div>
