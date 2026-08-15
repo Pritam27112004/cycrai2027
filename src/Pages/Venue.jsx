@@ -357,19 +357,21 @@ export default function Venue() {
               Institute of Engineering
 
               <span
-                className="
-                  block
-                  mt-3
-                  bg-gradient-to-r
-                  from-cyan-300
-                  via-sky-400
-                  to-blue-500
-                  bg-clip-text
-                  text-transparent
-                "
-              >
-                & Management, Kolkata
-              </span>
+  className="
+    block
+    mt-3
+    pb-1
+    leading-normal
+    bg-gradient-to-r
+    from-cyan-300
+    via-sky-400
+    to-blue-500
+    bg-clip-text
+    text-transparent
+  "
+>
+  &amp; Management, Kolkata
+</span>
             </h2>
 
             <p
