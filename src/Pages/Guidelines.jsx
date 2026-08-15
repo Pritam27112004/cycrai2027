@@ -74,7 +74,7 @@ export default function Guidelines() {
               HERO
       ========================================= */}
 
-      <section className="relative overflow-hidden bg-[#020817] min-h-screen pt-32 pb-24">
+      <section className="relative overflow-hidden bg-[#020817] min-h-screen pt-6 pb-24">
 
         {/* Grid */}
 

@@ -54,7 +54,7 @@ export default function Contact() {
           CONTACT INFORMATION
       ========================================================== */}
 
-      <section className="relative py-28 overflow-hidden bg-gradient-to-b from-[#020817] via-[#071326] to-[#020817]">
+      <section className="relative pt-6 pb-24 overflow-hidden bg-gradient-to-b from-[#020817] via-[#071326] to-[#020817]">
         {/* Background Grid */}
 
         <div

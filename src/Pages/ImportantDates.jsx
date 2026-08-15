@@ -916,8 +916,8 @@ export default function ImportantDates() {
         overflow-hidden
         bg-[#020817]
         text-white
-        py-28
-        md:py-36
+        pt-6
+  pb-28
         scroll-mt-24
       "
     >

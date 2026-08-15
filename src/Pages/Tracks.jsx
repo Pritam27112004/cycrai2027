@@ -89,164 +89,13 @@ const tracks = [
 
 export default function Tracks() {
   return (
-    <div className="bg-[#020817] text-white overflow-hidden">
+    <div className="bg-[#020817] text-white overflow-hidden ">
 
       {/* =====================================================
           HERO SECTION
       ===================================================== */}
 
-      <section
-        className="
-          relative
-          overflow-hidden
-          min-h-[85vh]
-          flex
-          items-center
-          bg-[#020817]
-          pt-32
-          pb-24
-        "
-      >
-
-        {/* Background Grid */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            opacity-[0.08]
-          "
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-
-        {/* Cyan Glow */}
-
-        <div
-          className="
-            absolute
-            -top-40
-            -left-20
-            w-[550px]
-            h-[550px]
-            bg-cyan-500/20
-            blur-[170px]
-            rounded-full
-          "
-        />
-
-        {/* Blue Glow */}
-
-        <div
-          className="
-            absolute
-            bottom-0
-            -right-20
-            w-[550px]
-            h-[550px]
-            bg-blue-600/20
-            blur-[180px]
-            rounded-full
-          "
-        />
-
-        {/* Hero Content */}
-
-        <div className="relative max-w-7xl mx-auto px-6 w-full">
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-
-            {/* Label */}
-
-            <span
-              className="
-                inline-flex
-                items-center
-                gap-2
-                rounded-full
-                border
-                border-cyan-400/30
-                bg-cyan-500/10
-                px-5
-                py-2
-                text-cyan-300
-                text-sm
-                tracking-[3px]
-                uppercase
-              "
-            >
-              <Sparkles size={16} />
-
-              Research Tracks
-            </span>
-
-            {/* Heading */}
-
-            <h1
-              className="
-                mt-8
-                text-5xl
-                md:text-7xl
-                lg:text-8xl
-                font-black
-                leading-tight
-                text-white
-              "
-            >
-              Explore Our
-
-              <span
-                className="
-                  block
-                  bg-gradient-to-r
-                  from-cyan-300
-                  via-sky-400
-                  to-blue-500
-                  bg-clip-text
-                  text-transparent
-                "
-              >
-                Research Tracks
-              </span>
-            </h1>
-
-            {/* Description */}
-
-            <p
-              className="
-                mt-8
-                max-w-4xl
-                mx-auto
-                text-lg
-                md:text-xl
-                leading-9
-                text-slate-300
-              "
-            >
-              CYCRAI 2027 brings together research communities working at the
-              intersection of Cyber Security, Cryptography and Responsible
-              Artificial Intelligence to shape secure and trustworthy digital
-              ecosystems.
-            </p>
-
-          </motion.div>
-
-        </div>
-      </section>
-
-
-      {/* =====================================================
-          INTRODUCTION
-      ===================================================== */}
-
+      
      
 
 
@@ -258,10 +107,13 @@ export default function Tracks() {
         id="tracks"
         className="
           relative
-          py-24
-          md:py-32
-          bg-[#020817]
-          overflow-hidden
+    overflow-hidden
+    min-h-[85vh]
+    flex
+    items-start
+    bg-[#020817]
+    pt-6
+    pb-24
         "
       >
 

@@ -2636,6 +2636,11 @@
 //   );
 // }
 
+
+
+
+
+
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -3363,11 +3368,10 @@ export default function Navbar() {
             border
             border-l-0
             border-cyan-400/35
-
-            bg-gradient-to-b
-            from-[#0A2944]/95
-            via-[#03172B]/95
-            to-[#020B18]/95
+bg-gradient-to-r
+from-[#13C8F3]
+via-[#18AEEF]
+to-[#2877FF]
 
             backdrop-blur-xl
 
@@ -3455,38 +3459,38 @@ export default function Navbar() {
           ================================================== */}
 
           <span
-            className="
-              relative
-              z-10
+  className="
+    relative
+    z-10
 
-              flex-1
+    flex-1
 
-              flex
-              items-center
-              justify-center
+    flex
+    items-center
+    justify-center
 
-              text-[9px]
+    text-[9px]
 
-              font-semibold
+    font-semibold
 
-              tracking-[0.18em]
+    tracking-[0.18em]
 
-              text-white/85
+    text-black
 
-              [writing-mode:vertical-rl]
+    [writing-mode:vertical-rl]
 
-              rotate-180
+    rotate-180
 
-              whitespace-nowrap
+    whitespace-nowrap
 
-              transition-colors
-              duration-300
+    transition-colors
+    duration-300
 
-              group-hover/tab:text-[#13C8F3]
-            "
-          >
-            CLICK HERE
-          </span>
+    group-hover/tab:text-black
+  "
+>
+  CLICK HERE
+</span>
 
           {/* =================================================
               SMALL ARROW
@@ -4165,3 +4169,4 @@ function MobileNavItem({ item, active, onClick }) {
     </Link>
   );
 }
+

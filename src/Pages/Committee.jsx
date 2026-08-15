@@ -308,7 +308,7 @@ export default function Committee() {
         {/* BLUE GLOW */}
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[170px] rounded-full" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-28">
+        <div className="relative max-w-7xl mx-auto px-6 pt-6 pb-28">
 
           {/* BADGE */}
           <motion.div
@@ -406,7 +406,7 @@ export default function Committee() {
       <section
         className="
           relative
-          py-28
+          pt-6 pb-24
           overflow-hidden
           bg-gradient-to-b
           from-[#020817]

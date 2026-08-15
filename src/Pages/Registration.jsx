@@ -314,7 +314,7 @@ export default function Registration() {
           min-h-[75vh]
           overflow-hidden
           bg-[#020817]
-          pt-36
+          pt-6
           pb-24
         "
       >
@@ -509,15 +509,35 @@ export default function Registration() {
                 />
 
               </button>
-
+             
             </div>
-
+            
+           <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: 160 }}
+              transition={{
+                delay: 0.4,
+                duration: 0.8,
+              }}
+              className="
+                mx-auto
+                mt-14
+                h-1
+                rounded-full
+                bg-gradient-to-r
+                from-cyan-400
+                via-sky-500
+                to-blue-600
+              "
+            />
           </motion.div>
-
+          
+        
         </div>
+        
 
       </section>
-
+      
 
       {/* =========================================================
           REGISTRATION FEES
@@ -527,12 +547,13 @@ export default function Registration() {
         id="fees"
         className="
           relative
-          py-28
+          pt-6 pb-28
           bg-gradient-to-b
           from-[#020817]
           via-[#071326]
           to-[#020817]
           overflow-hidden
+          
         "
       >
 
