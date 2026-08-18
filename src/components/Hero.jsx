@@ -160,7 +160,7 @@ export default function Hero() {
         tracking-wide
       "
     >
-      24 – 26 SEPTEMBER 2027
+      29 – 30 SEPTEMBER 2027
     </span>
   </div>
 

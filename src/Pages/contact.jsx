@@ -510,8 +510,8 @@ export default function Contact() {
               <h2 className="mt-8 text-4xl md:text-5xl font-black text-white">
                 We Look Forward to
                 <span className="block mt-2 pb-1 leading-normal bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-  Welcoming You
-</span>
+                    Welcoming You
+                 </span>
               </h2>
 
               <p className="mt-7 max-w-3xl mx-auto text-slate-400 text-lg leading-8">
